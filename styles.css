@@ -16,13 +16,6 @@ header {
     align-items: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -33,6 +26,13 @@ header {
 
 .logo:hover {
     color: #6a6a6a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -101,8 +101,9 @@ nav ul li a:hover {
 }
 
 .button-container {
-    position: absolute;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .learn-more-btn {
@@ -114,6 +115,7 @@ nav ul li a:hover {
     border-radius: 17px;
     text-align: center;
     font-size: 10px;
+    font-weight: bold;
     text-decoration: none;
     margin-top: 28px;
     border: none;
