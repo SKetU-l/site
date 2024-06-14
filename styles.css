@@ -147,13 +147,3 @@ nav ul li a:hover {
     left: 160px;
     top: 372px;
 }
-
-.hero-image {
-    position: absolute;
-    top: 150px;
-    right: 150px;
-}
-
-.hero-image img {
-    width: 350px;
-}
