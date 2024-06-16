@@ -1,9 +1,12 @@
+<script setup>
+
+</script>
 <template>
   <div>
     <header>
       <div class="navbar">
         <a
-          href="index.html"
+          href="/"
           class="logo"
         >RisingOS</a>
         <nav>
@@ -29,7 +32,7 @@
           >LEARN MORE</a>
         </div>
         <img
-          src="arrow.png"
+          src="/arrow.png"
           alt="Arrow"
           class="button-arrow"
         >
