@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
   <div>
     <header>
@@ -20,34 +17,20 @@
         <button class="join-btn">Join Us</button>
       </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Rising<span>OS</span></h1>
-          <p>RisingOS is an <span>OpenSource</span> Aftermarket Android Operating System, that aims to bring unique and
-            fresh user experience.</p>
-          <a
-            href="#"
-            class="learn-more-btn"
-          >LEARN MORE</a>
-        </div>
-        <img
-          src="/arrow.png"
-          alt="Arrow"
-          class="button-arrow"
-        >
-      </section>
-    </main>
+    <NuxtPage />
   </div>
 </template>
 
+<script setup>
+
+</script>
 <style>
 /* styles.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #0b0b0d;
-  background: #0b0b0d url('background.png') no-repeat center center fixed;
+  background: #0b0b0d url('/public/background.png') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
