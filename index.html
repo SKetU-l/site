@@ -5,31 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RisingOS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a href="index.html" class="logo">RisingOS</a>
-            <nav>
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">DOWNLOAD</a></li>
-                    <li><a href="#">TEAM</a></li>
-                </ul>
-            </nav>
-            <button class="join-btn">Join Us</button>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Rising<span>OS</span></h1>
-                <p>RisingOS is an <span>OpenSource</span> Aftermarket Android Operating System, that aims to bring unique and fresh user experience.</p>
-                <a href="#" class="learn-more-btn">LEARN MORE</a>
+    <!-- Desktop Layout -->
+    <div class="desktop-layout">
+        <header>
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </a>                
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SUPPORT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <button class="download-btn">DOWNLOAD</button>
             </div>
-            <img src="arrow.png" alt="Arrow" class="button-arrow">
-        </section>
-    </main>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-container"> 
+                    <div class="hero-content">
+                        <h1>LOOKING FOR NOT THE <span>"average"</span> CUSTOM ROM EXPERIENCE?</h1>
+                        <p>we might be exactly what you want.........</p>
+                    </div>
+                </div>
+            </section>
+            <section class="social-links">
+                <div class="icons">
+                    <a href="#"><img src="images/home/desktop/mail.png" alt="mail"></a>
+                    <a href="#"><img src="images/home/desktop/message-circle.png" alt="message"></a>
+                    <a href="#"><img src="images/home/desktop/send.png" alt="telegram"></a>
+                    <a href="#"><img src="images/home/desktop/github.png" alt="github"></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="mobile-layout">
+        <header>
+            <div class="mobile-navbar">
+                <a href="index.html" class="mobile-logo">RisingOS</a>
+                <button class="mobile-menu-btn">&#9776;</button>
+                <div class="mobile-icons">
+                    <a href="#"><img src="images/icon1.png" alt="icon1"></a>
+                    <a href="#"><img src="images/icon2.png" alt="icon2"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="mobile-hero">
+                <div class="mobile-hero-content">
+                    <h1 style="font-family: 'Outfit', sans-serif; font-weight: 300;">LOOKING FOR NOT THE <span style="font-family: 'Poppins', sans-serif; font-weight: 300; font-style: italic;"> "average"</span> CUSTOM ROM EXPERIENCE?</h1>
+                    <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-style: italic;">we might be exactly what you want.........</p>
+                    <div class="hero-image">
+                        <img src="images/hero-image.png" alt="Hero Image">
+                    </div>
+                </div>
+            </section>
+            <section class="social-links">
+                <div class="icons">
+                    <a href="#"><img src="images/icon1.png" alt="icon1"></a>
+                    <a href="#"><img src="images/icon2.png" alt="icon2"></a>
+                    <a href="#"><img src="images/icon3.png" alt="icon3"></a>
+                    <a href="#"><img src="images/icon4.png" alt="icon4"></a>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
