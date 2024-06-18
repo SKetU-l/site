@@ -17,7 +17,7 @@
         </li>
       </ul>
     </nav>
-    <Button theme="tonal">Download</Button>
+    <Button theme="filled">Download</Button>
   </div>
 </template>
 

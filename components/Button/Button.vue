@@ -46,5 +46,7 @@ const styles = reactive({
 .filled {
   @apply bg-colorBackgroundDark dark:bg-colorBackgroundLight;
   @apply text-colorTextDark dark:text-colorTextLight;
+  @apply hover:bg-opacity-30 dark:hover:bg-opacity-30;
+  @apply hover:text-colorTextDark dark:hover:text-colorTextDark;
 }
 </style>
