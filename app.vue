@@ -1,36 +1,22 @@
 <template>
-  <div>
+  <App>
     <header>
-      <div class="navbar">
-        <a
-          href="/"
-          class="logo"
-        >RisingOS</a>
-        <nav>
-          <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">DOWNLOAD</a></li>
-            <li><a href="#">TEAM</a></li>
-          </ul>
-        </nav>
-        <button class="join-btn">Join Us</button>
-      </div>
+      <AppNavbar />
     </header>
-    <NuxtPage />
-  </div>
+    <main>
+      <NuxtPage />
+    </main>
+  </App>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 <style>
 /* styles.css */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #0b0b0d;
-  background: #0b0b0d url('/public/background.png') no-repeat center center fixed;
+  background: #0b0b0d url("/public/background.png") no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
@@ -60,7 +46,6 @@ header {
   align-items: center;
   width: 100%;
 }
-
 
 nav ul {
   list-style: none;
@@ -110,20 +95,20 @@ nav ul li a:hover {
 .hero-content h1 {
   font-size: 3rem;
   margin: 0;
-  color: #C0B7E8;
+  color: #c0b7e8;
 }
 
 .hero-content h1 span {
-  color: #8C34E8;
+  color: #8c34e8;
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #C0B7E8;
+  color: #c0b7e8;
 }
 
 .hero-content p span {
-  color: #8C34E8;
+  color: #8c34e8;
 }
 
 .button-container {
@@ -135,7 +120,7 @@ nav ul li a:hover {
 .learn-more-btn {
   position: relative;
   display: inline-block;
-  background: linear-gradient(90deg, #8176AF, #C0B7E8);
+  background: linear-gradient(90deg, #8176af, #c0b7e8);
   color: #343045;
   padding: 10px 20px;
   border-radius: 17px;
@@ -152,7 +137,7 @@ nav ul li a:hover {
 }
 
 .learn-more-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
