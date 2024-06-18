@@ -33,12 +33,18 @@ const styles = reactive({
 }
 
 .outlined {
-  @apply outline outline-1 border-colorOutlineLight dark:border-colorOutlineDark hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundLight hover:text-colorTextDark dark:hover:text-colorTextLight;
+  @apply outline outline-1 border-colorOutlineLight dark:border-colorOutlineDark;
+  @apply hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundLight;
+  @apply hover:text-colorTextDark dark:hover:text-colorTextLight;
 }
 .tonal {
-  @apply text-colorTextLight dark:text-colorTextDark bg-colorPrimaryLight dark:bg-colorPrimaryDark bg-opacity-30 dark:bg-opacity-30 hover:bg-colorPrimaryLight dark:hover:bg-colorPrimaryDark hover:text-colorTextLight;
+  @apply text-colorTextLight dark:text-colorTextDark;
+  @apply bg-colorPrimaryLight dark:bg-colorPrimaryDark bg-opacity-30 dark:bg-opacity-30;
+  @apply hover:bg-colorPrimaryLight dark:hover:bg-colorPrimaryDark;
+  @apply hover:text-colorTextLight;
 }
 .filled {
-  @apply bg-colorBackgroundDark dark:bg-colorBackgroundLight text-colorTextDark dark:text-colorTextLight;
+  @apply bg-colorBackgroundDark dark:bg-colorBackgroundLight;
+  @apply text-colorTextDark dark:text-colorTextLight;
 }
 </style>
