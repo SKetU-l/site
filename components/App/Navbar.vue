@@ -7,23 +7,20 @@
     /></a>
     <nav>
       <ul class="flex flex-row space-x-1">
-        <li
-          v-for="page in pages"
-          class="px-2 py-1 rounded-full hover:bg-colorPrimaryLight hover:bg-opacity-30 transition-all duration-200"
-        >
-          <NuxtLink class="hover:text-colorPrimaryLight hover:font-bold" :to="page.path">
+        <li v-for="page in pages" class="px-2 py-1">
+          <NuxtLink
+            class="transition-all duration-200 hover:text-colorPrimaryLight hover:font-bold"
+            :to="page.path"
+          >
             {{ page.name }}
           </NuxtLink>
         </li>
       </ul>
     </nav>
-    <button
-      class="min-h-12 px-4 py-2 rounded-full bg-colorBackgroundDark dark:bg-colorBackgroundLight text-colorTextDark dark:text-colorTextLight"
-    >
-      Download
-    </button>
+    <FilledButton>Download</FilledButton>
   </div>
 </template>
+
 <script setup>
 const pages = [
   {
