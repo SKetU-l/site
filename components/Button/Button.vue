@@ -1,5 +1,5 @@
 <template>
-  <button class="px-4 py-2 transition-all duration-300" :class="styles">
+  <button class="px-4 py-2 rounded-lg transition-all duration-300" :class="styles">
     <slot />
   </button>
 </template>

@@ -3,9 +3,21 @@
     class="min-h-14 w-full px-4 py-2 flex justify-between items-center bg-colorBackgroundLight dark:bg-colorBackgroundDark"
   >
     <a href="/" class="w-12 h-12 p-4 items-center"
-      ><img src="/public/logo-dark.svg" alt="RisingOS-Logo"
+      ><img
+        src="/public/logo-dark.svg"
+        class="text-colorPrimaryLight"
+        alt="RisingOS-Logo"
     /></a>
-    <nav>
+    <!-- Mobile menu -->
+    <div class="flex flex-row sm:hidden space-x-2">
+      <IconButton icon="/mail.svg" class="bg-colorPrimaryLight text-colorTextLight" />
+      <IconButton
+        icon="ic:outline-menu"
+        class="bg-colorBackgroundLight text-colorTextLight"
+      />
+    </div>
+    <!-- Desktop menu -->
+    <nav class="hidden sm:flex">
       <ul class="flex flex-row space-x-1">
         <li v-for="page in pages" class="px-2 py-1">
           <NuxtLink
@@ -17,7 +29,7 @@
         </li>
       </ul>
     </nav>
-    <Button theme="filled">Download</Button>
+    <Button theme="filled" pill="false" class="hidden sm:flex">Download</Button>
   </div>
 </template>
 
@@ -44,4 +56,16 @@ const pages = [
     path: "/blog",
   },
 ];
+var isLargeScreen = ref(false);
+
+onMounted(() => {
+  window.addEventListener("resize", onWindowResize);
+  onWindowResize();
+});
+onUnmounted(() => {
+  window.removeEventListener("resize", onWindowResize);
+});
+const onWindowResize = () => {
+  isLargeScreen = window.innerWidth > 600;
+};
 </script>
