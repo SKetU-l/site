@@ -4,8 +4,9 @@
       <AppNavbar />
     </header>
     <main>
+      <!-- 
       <NuxtPage />
-    </main>
+    --></main>
   </App>
 </template>
 
