@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    padding: 20px 40px;
+    padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,12 +78,20 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    position: relative;
 }
 
 .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 .hero-content h1 {
@@ -91,7 +99,7 @@ nav ul li a:hover {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 5vw;
     margin: 0;
     color: #EDE3D4;
     line-height: 1.3;
@@ -101,7 +109,7 @@ nav ul li a:hover {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 5vw;
     color: #FF9E4E;
     display: block;
 }
@@ -110,18 +118,44 @@ nav ul li a:hover {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     color: #FFF9EF;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.try-button {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+}
+
+.phone-image {
+    position: absolute;
+    right: -50px;
+    bottom: -100px;
+    width: 50%;
+    max-width: 300px;
+}
+
+.phone-image img {
+    width: 100%;
+    height: auto;
 }
 
 /* Social Links Section */
 .social-links {
-    display: flex;
-    margin-top: 200px;
-    margin-left: 253px;
-}
-
-.social-links .icons {
+    position: absolute;
+    bottom: 12%;
+    left: 17%;
     display: flex;
     gap: 20px;
 }
@@ -135,6 +169,29 @@ nav ul li a:hover {
     opacity: 0.5;
     cursor: pointer;
     transition: opacity 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-container {
+        width: 90%;
+    }
+
+    .social-links {
+        bottom: 10%;
+        left: 5%;
+    }
+
+    .social-links .icons a img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-height: 600px) {
+    .social-links {
+        bottom: 8%;
+    }
 }
 
 /* Mobile Layout */
@@ -232,6 +289,10 @@ nav ul li a:hover {
         background-size: cover;
     }
 
+    .hero-content {
+        max-width: 100%;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -240,13 +301,45 @@ nav ul li a:hover {
         font-size: 2rem;
     }
 
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .try-button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .phone-image {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 250px;
+    }
+
     .social-links {
-        margin-top: 100px;
-        margin-left: 50px;
+        position: static;
+        margin-top: 30px;
     }
 
     .social-links .icons a img {
         width: 15px;
         height: 15px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-content h1,
+    .hero-content h1 span {
+        font-size: 80px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
     }
 }
