@@ -21,13 +21,13 @@ module.exports = {
       },
       colors: {
         /* light */
-        colorPrimaryLight: "#5F5B55",
+        colorPrimaryLight: "#FF9E4E",
         colorTextLight: "#131313",
         colorBackgroundLight: "#FFF9EF",
         colorOutlineLight: "#131313",
 
         /* dark */
-        colorPrimaryDark: "#5F5B55",
+        colorPrimaryDark: "#FF9E4E",
         colorTextDark: "#EDE3D4",
         colorBackgroundDark: "#131313",
         colorOutlineDark: "#EDE3D4",
