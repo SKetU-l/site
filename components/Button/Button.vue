@@ -34,8 +34,10 @@ const styles = reactive({
 
 .outlined {
   @apply outline outline-1 border-colorOutlineLight dark:border-colorOutlineDark;
-  @apply hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundLight;
-  @apply hover:text-colorTextDark dark:hover:text-colorTextLight;
+  @apply bg-colorBackgroundDark dark:bg-colorBackgroundLight;
+  @apply text-colorTextDark dark:text-colorTextLight;
+  @apply hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundDark;
+  @apply hover:text-colorTextDark dark:hover:text-colorTextDark;
 }
 .tonal {
   @apply text-colorTextLight dark:text-colorTextDark;
