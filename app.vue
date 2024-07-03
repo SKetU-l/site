@@ -3,8 +3,10 @@
     <header class="left-0 top-0 right-0 fixed">
       <Navbar />
     </header>
-    <main class="mt-16">
-      <NuxtPage />
+    <main class="size-full pt-16">
+      <div class="mx-auto max-w-screen-xl">
+        <NuxtPage />
+      </div>
     </main>
   </App>
 </template>

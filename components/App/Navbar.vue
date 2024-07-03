@@ -10,7 +10,10 @@
     /></a>
     <!-- Mobile menu -->
     <div class="flex flex-row sm:hidden space-x-2">
-      <IconButton icon="/mail.svg" class="bg-colorPrimaryLight text-colorTextLight" />
+      <IconButton
+        icon="mdi:email-outline"
+        class="bg-colorPrimaryLight text-colorTextDark"
+      />
       <IconButton
         icon="ic:outline-menu"
         class="bg-colorBackgroundLight text-colorTextLight"
