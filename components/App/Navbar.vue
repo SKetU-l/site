@@ -5,7 +5,7 @@
     <a href="/" class="w-12 h-12 p-4 items-center"
       ><img
         src="/public/logo-dark.svg"
-        class="text-colorPrimaryLight"
+        class="text-colorPrimaryLight logo"
         alt="RisingOS-Logo"
     /></a>
     <!-- Mobile menu -->
@@ -69,3 +69,10 @@ const onWindowResize = () => {
   isLargeScreen = window.innerWidth > 600;
 };
 </script>
+
+<style>
+.logo:hover {
+  @apply bg-colorPrimaryLight;
+  transition: all 0.3s ease-in-out;
+}
+</style>
