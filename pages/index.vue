@@ -29,7 +29,7 @@
                 v-for="n in 4"
                 name="mdi:github"
                 size="24"
-                class="text-colorBackgroundLight"
+                class="text-colorTextLight dark:text-colorTextDark"
               />
             </div>
           </div>
