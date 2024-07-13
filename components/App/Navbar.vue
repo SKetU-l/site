@@ -2,9 +2,9 @@
   <div
     class="min-h-14 w-full px-4 py-2 flex justify-between items-center bg-colorBackgroundLight dark:bg-colorBackgroundDark"
   >
-    <a href="/" class="size-12 flex group p-2 items-center">
+    <a href="/" class="size-12flex group p-2 items-center">
       <Logo
-        class="size-8 group-hover:fill-colorPrimaryLight transition-all duration-300"
+        class="size-8 md:size-12 group-hover:fill-colorPrimaryLight transition-all duration-300"
       />
     </a>
     <!-- Mobile menu -->
