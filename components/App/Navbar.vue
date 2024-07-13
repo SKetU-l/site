@@ -2,12 +2,20 @@
   <div
     class="min-h-14 w-full px-4 py-2 flex justify-between items-center bg-colorBackgroundLight dark:bg-colorBackgroundDark"
   >
-    <a href="/" class="w-12 h-12 p-4 items-center"
-      ><img
-        src="/public/logo-dark.svg"
-        class="text-colorPrimaryLight logo"
+    <a href="/" class="w-12 h-12 p-4 items-center relative" @mouseover="hover = true" @mouseleave="hover = false">
+      <img
+        :src="logoDark"
+        class="text-colorPrimaryLight logo absolute"
         alt="RisingOS-Logo"
-    /></a>
+        :style="{ opacity: hover ? 0 : 1 }"
+      />
+      <img
+        :src="logoDarkHover"
+        class="text-colorPrimaryLight logo absolute"
+        alt="RisingOS-Logo"
+        :style="{ opacity: hover ? 1 : 0 }"
+      />
+    </a>
     <!-- Mobile menu -->
     <div class="flex flex-row sm:hidden space-x-2">
       <IconButton
@@ -37,6 +45,8 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+
 const pages = [
   {
     name: "HOME",
@@ -59,6 +69,11 @@ const pages = [
     path: "/blog",
   },
 ];
+
+const hover = ref(false);
+const logoDark = '/logo-dark.svg';
+const logoDarkHover = '/logo-dark-hover.svg';
+
 var isLargeScreen = ref(false);
 
 onMounted(() => {
@@ -69,13 +84,12 @@ onUnmounted(() => {
   window.removeEventListener("resize", onWindowResize);
 });
 const onWindowResize = () => {
-  isLargeScreen = window.innerWidth > 600;
+  isLargeScreen.value = window.innerWidth > 600;
 };
 </script>
 
 <style>
-.logo:hover {
-  @apply bg-colorPrimaryLight;
-  transition: all 0.3s ease-in-out;
+.logo {
+  transition: opacity 0.3s ease-in-out;
 }
 </style>
