@@ -7,11 +7,3 @@
     <NuxtPage />
   </App>
 </template>
-
-<script setup></script>
-<style>
-body {
-  font-family: sans-serif;
-  @apply bg-colorBackgroundLight dark:bg-colorBackgroundDark text-colorTextLight dark:text-colorTextDark;
-}
-</style>
