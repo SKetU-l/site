@@ -60,19 +60,19 @@ const pages = [
   },
   {
     name: "TEAM",
-    path: "/team",
+    path: "/",
   },
   {
     name: "ABOUT",
-    path: "/about",
+    path: "/",
   },
   {
     name: "SUPPORT",
-    path: "/support",
+    path: "/",
   },
   {
     name: "BLOG",
-    path: "/blog",
+    path: "/",
   },
 ];
 
