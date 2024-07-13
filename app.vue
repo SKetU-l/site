@@ -1,13 +1,10 @@
 <template>
   <App>
-    <header class="left-0 top-0 right-0 fixed">
+    <header class="sicky left-0 top-0 right-0">
       <Navbar />
     </header>
-    <main class="size-full pt-16">
-      <div class="mx-auto max-w-screen-xl">
-        <NuxtPage />
-      </div>
-    </main>
+
+    <NuxtPage />
   </App>
 </template>
 
