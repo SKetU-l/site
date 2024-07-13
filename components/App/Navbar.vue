@@ -2,7 +2,12 @@
   <div
     class="min-h-14 w-full px-4 py-2 flex justify-between items-center bg-colorBackgroundLight dark:bg-colorBackgroundDark"
   >
-    <a href="/" class="w-12 h-12 p-4 items-center relative" @mouseover="hover = true" @mouseleave="hover = false">
+    <a
+      href="/"
+      class="w-12 h-12 p-4 items-center relative"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+    >
       <img
         :src="logoDark"
         class="text-colorPrimaryLight logo absolute"
@@ -17,15 +22,14 @@
       />
     </a>
     <!-- Mobile menu -->
-    <div class="flex flex-row sm:hidden space-x-2">
-      <IconButton
-        icon="mdi:email-outline"
-        class="bg-colorPrimaryLight text-colorTextDark"
+    <div
+      class="flex flex-row sm:hidden space-x-2 *:size-10 *:p-2 *:rounded-full"
+    >
+      <Icon
+        name="mdi:email-outline"
+        class="bg-colorPrimaryLight text-colorTextDark dark:text-colorTextLight"
       />
-      <IconButton
-        icon="ic:outline-menu"
-        class="bg-colorBackgroundLight text-colorTextLight"
-      />
+      <IconButton icon="ic:outline-menu" class="bg-white text-colorTextLight" />
     </div>
     <!-- Desktop menu -->
     <nav class="hidden sm:flex">
@@ -40,12 +44,14 @@
         </li>
       </ul>
     </nav>
-    <Button theme="outlined" pill="false" class="hidden sm:flex">Download</Button>
+    <Button theme="outlined" pill="false" class="hidden sm:flex"
+      >Download</Button
+    >
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const pages = [
   {
@@ -71,8 +77,8 @@ const pages = [
 ];
 
 const hover = ref(false);
-const logoDark = '/logo-dark.svg';
-const logoDarkHover = '/logo-dark-hover.svg';
+const logoDark = "/logo-dark.svg";
+const logoDarkHover = "/logo-dark-hover.svg";
 
 var isLargeScreen = ref(false);
 

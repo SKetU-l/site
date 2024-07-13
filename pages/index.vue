@@ -1,6 +1,9 @@
 <template>
-  <Container id="hero" class="flex flex-col col-span-2 h-full w-fit">
-    <div class="h-full text-8xl">
+  <Container
+    id="hero"
+    class="flex flex-col col-span-2 h-full w-fit space-y-4 sm:space-y-0"
+  >
+    <div class="h-full flex-grow text-3xl md:text-8xl sm:m-auto">
       <h1>LOOOKING FOR THE NOT</h1>
       <h1>
         <span class="text-colorPrimaryLight italic">"avarage" </span>CUSTOM
@@ -10,21 +13,35 @@
         We might be exaclty what you want..........
       </h4>
     </div>
-    <div class="h-full flex space-x-4 space-y-4 *:rounded-xl *:overflow-clip">
-      <div id="call-to-action" class="flex outline-dashed p-4">
-        <div class="flex-grow">
-          <h4>try it out</h4>
+    <div
+      class="h-fit flex flex-col-reverse sm:flex-row lg:min-h-60 justify-center items-center space-x-0 sm:space-x-8 *:rounded-2xl *:overflow-clip"
+    >
+      <div
+        id="call-to-action"
+        class="h-full min-h-40 w-full sm:w-4/12 flex outline-dashed outline-1 p-4"
+      >
+        <div class="flex m-auto">
+          <div class="h-full">
+            <h4 class="text-lg">try it out</h4>
+            <hr class="min-w-44 flex-grow my-2" />
+            <div class="flex space-x-2">
+              <Icon
+                v-for="n in 4"
+                name="mdi:github"
+                size="24"
+                class="text-colorBackgroundLight"
+              />
+            </div>
+          </div>
+          <Icon
+            name="ic:outline-arrow-forward"
+            class="size-14 p-4 rounded-full -rotate-45 bg-colorPrimaryLight"
+          />
         </div>
-        <IconButton
-          icon="ic:outline-arrow-forward"
-          theme="filled"
-          name="Download"
-          class="min-h-16 -rotate-45"
-        />
       </div>
-      <div class="flex-grow">
-        <img src="" alt="" class="h-full bg-white" />
-      </div>
+      <div
+        class="h-full min-h-40 w-full flex-grow mb-4 sm:mb-0 bg-colorPrimaryLight"
+      ></div>
     </div>
   </Container>
 </template>
