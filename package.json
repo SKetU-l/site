@@ -1,5 +1,5 @@
 {
-  "name": "site",
+  "name": "nuxt-app",
   "private": true,
   "type": "module",
   "scripts": {
