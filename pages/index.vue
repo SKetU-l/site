@@ -27,7 +27,8 @@
             <div class="flex space-x-2">
               <Icon
                 v-for="n in 4"
-                name="mdi:github"
+                :key="n"
+                :name="n === 1 ? 'mdi:email-outline' : (n === 2 ? 'tabler:message-circle-2' : (n === 3 ? 'mingcute:telegram-line' : 'mingcute:github-line'))"
                 size="24"
                 class="text-colorTextLight dark:text-colorTextDark"
               />
