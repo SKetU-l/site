@@ -39,6 +39,15 @@ const styles = reactive({
   @apply hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundDark;
   @apply hover:text-colorTextDark dark:hover:text-colorTextDark;
 }
+.outlined:hover {
+  background-color: var(--colorPrimaryLight);
+  color: var(--colorTextDark);
+}
+
+.dark .outlined:hover {
+  background-color: var(--colorPrimaryDark);
+  color: var(--colorTextLight);
+}
 .tonal {
   @apply text-colorTextLight dark:text-colorTextDark;
   @apply bg-colorPrimaryLight dark:bg-colorPrimaryDark bg-opacity-30 dark:bg-opacity-30;
