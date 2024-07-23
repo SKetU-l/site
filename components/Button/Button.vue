@@ -1,5 +1,5 @@
 <template>
-  <button class="px-4 py-2 rounded-lg transition-all duration-300" :class="styles">
+  <button class="px-5 py-3 rounded-lg transition-all duration-300" :class="styles">
     <slot />
   </button>
 </template>
@@ -33,20 +33,12 @@ const styles = reactive({
 }
 
 .outlined {
-  @apply outline outline-1 border-colorOutlineLight dark:border-colorOutlineDark;
+  @apply outline outline-2 border-colorTextLight dark:border-colorTextDark;
   @apply bg-colorBackgroundDark dark:bg-colorBackgroundLight;
   @apply text-colorTextDark dark:text-colorTextLight;
-  @apply hover:bg-colorBackgroundDark dark:hover:bg-colorBackgroundDark;
-  @apply hover:text-colorTextDark dark:hover:text-colorTextDark;
-}
-.outlined:hover {
-  background-color: var(--colorPrimaryLight);
-  color: var(--colorTextDark);
-}
-
-.dark .outlined:hover {
-  background-color: var(--colorPrimaryDark);
-  color: var(--colorTextLight);
+  @apply hover:bg-colorBackgroundLight dark:hover:bg-colorBackgroundDark;
+  @apply hover:text-colorBackgroundDark dark:hover:text-colorBackgroundLight;
+  @apply hover:border-colorBackgroundDark dark:hover:border-colorBackgroundLight;
 }
 .tonal {
   @apply text-colorTextLight dark:text-colorTextDark;

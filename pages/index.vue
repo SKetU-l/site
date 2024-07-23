@@ -4,12 +4,13 @@
     class="flex flex-col col-span-2 h-full w-fit space-y-4 sm:space-y-0"
   >
     <div class="h-full flex flex-col justify-center flex-grow text-2xl md:text-8xl sm:m-auto">
-      <h1>LOOKING FOR THE NOT</h1>
+      <h1 style="font-family: 'Outfit', sans-serif;">LOOKING FOR NOT THE</h1>
       <h1>
-        <span class="text-colorPrimaryLight italic">"average" </span>CUSTOM
+        <span class="text-colorPrimaryLight" style="font-family: 'Poppins', sans-serif; font-style: italic;">"average" </span>
+        <span style="font-family: 'Outfit', sans-serif;">CUSTOM</span>
       </h1>
-      <h1>ROM EXPERIENCE?</h1>
-      <h4 class="text-lg italic">
+      <h1 style="font-family: 'Outfit', sans-serif;">ROM EXPERIENCE?</h1>
+      <h4 class="text-lg italic" style="font-family: 'Outfit', sans-serif;">
         We might be exactly what you want..........
       </h4>
     </div>
@@ -22,13 +23,13 @@
       >
         <div class="flex m-auto">
           <div class="h-full">
-            <h4 class="text-lg">try it out</h4>
+            <h4 class="text-lg" style="font-family: 'Outfit', sans-serif;">try it out!</h4>
             <hr class="min-w-60 flex-grow my-2" />
             <div class="flex space-x-2">
               <Icon
                 v-for="n in 4"
                 :key="n"
-                :name="n === 1 ? 'mdi:email-outline' : (n === 2 ? 'tabler:message-circle-2' : (n === 3 ? 'mingcute:telegram-line' : 'mingcute:github-line'))"
+                :name="['mdi:email-outline', 'tabler:message-circle-2', 'mingcute:telegram-line', 'mingcute:github-line'][n - 1]"
                 size="24"
                 class="text-colorTextLight dark:text-colorTextDark"
               />

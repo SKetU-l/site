@@ -22,7 +22,8 @@
       <ul class="flex flex-row space-x-1">
         <li v-for="page in pages" class="px-2 py-1">
           <NuxtLink
-            class="transition-all duration-200 hover:text-colorPrimaryLight"
+            :style="{ fontFamily: 'Outfit, sans-serif', fontSize: '15.05px', fontWeight: 'bold', lineHight: '18.96px' }"
+            class="transition-all duration-300 hover:text-colorPrimaryLight"
             :to="page.path"
           >
             {{ page.name }}
@@ -30,8 +31,8 @@
         </li>
       </ul>
     </nav>
-    <Button theme="outlined" pill="false" class="hidden sm:flex"
-      >Download</Button
+    <Button theme="outlined" pill="false" class="hidden sm:flex" font="Outfit"
+      >DOWNLOAD</Button
     >
   </div>
 </template>
